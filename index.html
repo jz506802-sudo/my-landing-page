@@ -2,57 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get the Free Side Hustle Guide</title>
 
   <!-- Tally 脚本 -->
   <script async src="https://tally.so/widgets/embed.js"></script>
 
   <style>
-    html, body {
+    body {
       margin: 0;
-      height: 100%;
-      overflow: hidden;
       font-family: Arial, sans-serif;
       background: #f7f7f7;
+      text-align: center;
+      padding: 20px;
     }
 
+    .container {
+      background: white;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    /* ✅ 关键修改：取消全屏覆盖 */
     iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
+      height: 500px;
       border: none;
+      margin-top: 10px;
     }
 
-    /* 底部合规提示 */
     .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background: rgba(255,255,255,0.9);
       font-size: 12px;
       color: #555;
-      text-align: center;
-      padding: 8px;
+      margin-top: 15px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Tally 表单 -->
+<div class="container">
+
+  <h1>How I Made My First $100 Online</h1>
+
+  <p>A simple beginner-friendly side hustle you can start today.</p>
+
+  <ul>
+    <li>No prior skills needed</li>
+    <li>Works in the US</li>
+    <li>1–2 hours/day</li>
+    <li>Beginner-friendly</li>
+  </ul>
+
+  <p>
+    I started this while working a full-time job.<br>
+    After a few days, I made my first $100 online.<br>
+    Nothing crazy — just something simple that works.
+  </p>
+
+  <h3>Get the Free Guide</h3>
+
+  <!-- ✅ 表单嵌入（不再全屏） -->
   <iframe 
     data-tally-src="https://tally.so/r/dW2kGD?transparentBackground=1"
     title="Get the Free Side Hustle Guide">
   </iframe>
 
-  <!-- 合规说明（建议保留） -->
   <div class="footer">
-    By entering your phone number, you agree to receive messages about this guide and related offers.  
+    By entering your phone number, you agree to receive messages about this guide and related offers.<br>
     Reply STOP to opt out at any time.
   </div>
+
+  <div class="footer">
+    This is not a get-rich-quick method. Results may vary.
+  </div>
+
+</div>
 
 </body>
 </html>
